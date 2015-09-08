@@ -1,0 +1,11 @@
+{
+    "name": "sona",
+    "version": "0.0.1",
+    "authors": [
+        "nicolas soares"
+    ],
+    "description": "sona desktop",
+    "dependencies": {
+        "angular-soundmanager2": "*"
+    }
+}

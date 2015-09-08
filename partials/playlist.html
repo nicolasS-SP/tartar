@@ -1,0 +1,16 @@
+<h1>Playlist: {{playlist.name}}</h1>
+<button
+	ng-click="add()"
+>
+	Add to playlist
+</button>
+<button
+	ng-click="launch()"
+>
+	Launch playlist
+</button>
+
+<a ui-sref="logedIn.playlists">Playlists page</a>
+<div ng-repeat="song in playlist.songs">
+	{{song.artists[0]}} -- {{song.title}}
+</div>

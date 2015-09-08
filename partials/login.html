@@ -1,0 +1,42 @@
+<h1>Login page</h1>
+
+<form ng-submit="login(email, password)">
+	<div class="form-group">
+		<label for="exampleInputEmail1">Email address</label>
+		<input
+			ng-model="email"
+			class="form-control ng-pristine ng-valid"
+			type="text"
+			name="email"
+		>
+	</div>
+	<div class="form-group">
+		<label for="exampleInputpassword">Password</label>
+		<input
+			ng-model="password"
+			class="form-control ng-pristine ng-valid"
+			type="password"
+			name="password"
+		>
+	</div>
+	<div class="form-group">
+		<button type="submit" class="btn btn-default">Submit</button>
+	</div>
+</form>
+
+<button
+	type="button"
+	class="btn btn-primary btn-large"
+	ng-click="facebookLogin()"
+>
+		Login with Facebook
+</button>
+
+<button
+	type="button"
+	class="btn btn-primary btn-large"
+	ng-click="googleLogin()"
+>
+		Login with Google
+</button>
+
